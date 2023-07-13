@@ -2,11 +2,12 @@
   --color-white: hsl(0, 0%, 100%);
   --color-lightGray: hsl(212, 45%, 89%);
   --color-grayishBlue: hsl(220, 15%, 55%);
-  --color-darkBlue: hsl(218, 44%, 22%);
-  --ff-primary: "Outfit";
+  --color-darkBlue: hsl(210, 8%, 5%);
+  --ff-primary: "Outfit", sans-serif;
   --fw-regular: 400;
   --fw-bold: 700;
   --border-radius: 1.2rem;
+  --drop-shadow: 7px 6px 20px -8px rgba(0, 0, 0, 0.05);
 }
 
 *,
@@ -22,7 +23,7 @@ img {
 }
 
 body {
-  font-family: var(--ff-primary), sans-serif;
+  font-family: var(--ff-primary);
   background-color: var(--color-lightGray);
   font-size: 15px;
 }
@@ -54,7 +55,7 @@ p {
   padding: 1rem 1rem 2.5rem;
   border-radius: var(--border-radius);
   text-align: center;
-  box-shadow: 7px 6px 20px -8px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--drop-shadow);
 }
 
 .card__img {
@@ -79,7 +80,7 @@ p {
 }
 
 .attribution {
-  color: var(--color-darkBlue);
+  color: var(--color-grayishBlue);
   letter-spacing: 0.05em;
   padding-top: 2em;
   text-align: center;
@@ -91,6 +92,6 @@ p {
 
 .attribution__link {
   color: var(--color-grayishBlue);
-  text-decoration: underline dotted;
+  text-decoration: underline dotted var(--color-darkBlue);
   text-underline-offset: 0.25em;
 }
