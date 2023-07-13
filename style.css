@@ -2,7 +2,7 @@
   --color-white: hsl(0, 0%, 100%);
   --color-lightGray: hsl(212, 45%, 89%);
   --color-grayishBlue: hsl(220, 15%, 55%);
-  --color-darkBlue: hsl(210, 8%, 5%);
+  --color-darkBlue: hsl(218, 44%, 22%);
   --ff-primary: "Outfit", sans-serif;
   --fw-regular: 400;
   --fw-bold: 700;
@@ -52,7 +52,7 @@ p {
   background-color: var(--color-white);
   width: calc(100% - 2rem);
   max-width: 375px;
-  padding: 1rem 1rem 2.5rem;
+  padding: 1.2em 1.2em 2.7em;
   border-radius: var(--border-radius);
   text-align: center;
   box-shadow: var(--drop-shadow);
@@ -91,7 +91,7 @@ p {
 }
 
 .attribution__link {
-  color: var(--color-grayishBlue);
-  text-decoration: underline dotted var(--color-darkBlue);
+  color: var(--color-darkBlue);
+  text-decoration: underline dotted var(--color-grayishBlue);
   text-underline-offset: 0.25em;
 }
